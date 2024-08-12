@@ -11,7 +11,7 @@ const ovo = Ovo({
   weight: ["400"],
 });
 
-function page(props) {
+function Template(props) {
   const { templateName } = props;
   const { pageDetails, fetchPageDetails, dataStatus } = useContext(DataContext);
 
@@ -76,4 +76,4 @@ function page(props) {
   );
 }
 
-export default page;
+export default Template;
