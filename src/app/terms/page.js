@@ -2,7 +2,7 @@ import React from "react";
 
 function page() {
   return (
-    <div className="w-full px-5 text-white mb-48">
+    <div className="w-full px-5 text-white md:mb-48 mb-96">
       <h3 className="text-primary text-2xl">Terms and Conditions</h3>
       <p>Last updated: 27-07-24</p>
       <ul className="w-full flex justify-start items-start flex-col gap-5 list-decimal my-10 px-5">

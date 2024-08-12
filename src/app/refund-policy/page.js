@@ -3,12 +3,12 @@ import React from "react";
 
 function page() {
   return (
-    <div className="w-full text-white font-mono flex justify-start items-start flex-col gap-5 mb-48">
+    <div className="w-full text-white font-mono flex justify-start items-start flex-col gap-5 md:mb-48 mb-96">
       <p>
-        At [], we currently do not offer refunds for our services. All purchases
-        and transactions made on our platform are considered final. We encourage
-        our users to carefully review our offerings, pricing, and terms before
-        making any commitments or purchases.
+        At Landinglist.xyz, we currently do not offer refunds for our services.
+        All purchases and transactions made on our platform are considered
+        final. We encourage our users to carefully review our offerings,
+        pricing, and terms before making any commitments or purchases.
       </p>
       <p>
         We strive to provide accurate and valuable information about the Landing

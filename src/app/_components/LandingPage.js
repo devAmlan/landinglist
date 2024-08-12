@@ -22,7 +22,7 @@ function LandingPage() {
 
   if (_.get(dataStatus, "isLoading")) {
     return (
-      <div className="mb-48">
+      <div className="md:mb-48 mb-96">
         <SkeletonLoader />
       </div>
     );
@@ -30,7 +30,7 @@ function LandingPage() {
 
   if (_.get(dataStatus, "isError")) {
     return (
-      <div className="w-full flex justify-center items-center flex-col gap-5 mb-48">
+      <div className="w-full flex justify-center items-center flex-col gap-5 md:mb-48 mb-96">
         <h3 className="text-red-600">Something went wrong,Please try again</h3>
         <button
           className="px-4 py-2 bg-red-600 rounded-md text-white font-semibold"
@@ -43,7 +43,7 @@ function LandingPage() {
   }
 
   return (
-    <div className="w-full flex justify-center items-center flex-col gap-5 mb-48">
+    <div className="w-full flex justify-center items-center flex-col gap-5 md:mb-48 mb-96">
       {!_.isEmpty(pageList) && (
         <div className="w-full flex justify-center items-center flex-col gap-5">
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2">

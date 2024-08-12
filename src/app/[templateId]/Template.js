@@ -21,7 +21,7 @@ function Template(props) {
 
   if (_.get(dataStatus, "isLoading")) {
     return (
-      <div className="w-full mb-48">
+      <div className="w-full md:mb-48 mb-96">
         <div className="w-full flex justify-start items-start flex-col gap-10">
           <LongSkeletonLoader />
         </div>
@@ -30,7 +30,7 @@ function Template(props) {
   }
 
   return (
-    <div className="w-full mb-48">
+    <div className="w-full md:mb-48 mb-96">
       <div className="w-full flex justify-start items-start flex-col gap-10">
         <h3 className={`text-[#FFFFFF] font-bold text-3xl ${ovo.className}`}>
           {pageDetails?.name}
