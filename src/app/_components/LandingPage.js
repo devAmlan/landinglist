@@ -21,12 +21,16 @@ function LandingPage() {
   };
 
   if (_.get(dataStatus, "isLoading")) {
-    return <SkeletonLoader />;
+    return (
+      <div className="mb-48">
+        <SkeletonLoader />
+      </div>
+    );
   }
 
   if (_.get(dataStatus, "isError")) {
     return (
-      <div className="w-full flex justify-center items-center flex-col gap-5">
+      <div className="w-full flex justify-center items-center flex-col gap-5 mb-48">
         <h3 className="text-red-600">Something went wrong,Please try again</h3>
         <button
           className="px-4 py-2 bg-red-600 rounded-md text-white font-semibold"
