@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Template from "./Template";
 function page(props) {
