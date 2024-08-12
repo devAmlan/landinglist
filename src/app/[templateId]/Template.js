@@ -12,11 +12,9 @@ const ovo = Ovo({
 });
 
 function page(props) {
-  const { params } = props;
+  const { templateName } = props;
   const { pageDetails, fetchPageDetails, dataStatus } = useContext(DataContext);
 
-  const templateName = params?.templateId;
-  console.log(pageDetails);
   useEffect(() => {
     fetchPageDetails({ templateName });
   }, []);
